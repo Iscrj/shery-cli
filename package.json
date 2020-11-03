@@ -1,0 +1,25 @@
+{
+  "name": "shery-demo-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "shery": "bin/shery",
+    "shery-add": "bin/shery-add",
+    "shery-delete": "bin/shery-delete",
+    "shery-list": "bin/shery-list",
+    "shery-init": "bin/shery-init"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^3.0.2",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^7.0.0",
+    "ora": "^4.0.2"
+  }
+}
