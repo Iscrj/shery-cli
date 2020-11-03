@@ -30,7 +30,6 @@ if (!projectName) {
 const url = tplObj[templateName]
 
 console.log(chalk.white('\n Start generating... \n'))
-console.log(url)
 // 出现加载图标
 const spinner = ora("Downloading...");
 spinner.start();
@@ -39,6 +38,7 @@ spinner.start();
 download (
     url,
     projectName,
+    {clone: true},
     err => {
       if (err) {
         spinner.fail();
